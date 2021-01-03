@@ -1,3 +1,7 @@
 *{
   margin: 0;
 }
+.home{
+  max-width: 1500px;
+  margin: auto auto;
+}
