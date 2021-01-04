@@ -1,5 +1,6 @@
 import React from 'react'
 // import { useStateValue } from '../ContextAPI/StateProvider';
+import star from '../images/jumia_images/star_yellow.png';
 import '../Style/Product.css';
 import { useStateValue } from '../ContextAPI/StateProvider';
 
@@ -20,23 +21,25 @@ function Product({id,title,image,price,rating}) {
         });
     };
     return (
-        <div className="product">
+        <div className="product" onClick={addToBasket}>
+            <img src={image} alt=""/>
             <div className="product_info">
-           <p>{title}</p> 
+           <p className="title">{title}</p> 
            <p className="product_price">
-               <small>$</small>
-            <strong>{price}</strong>
+               <span>UGX </span>
+            <span>{price}</span>
             </p>
             <div className="product_rating">
                 {Array(rating)
                 .fill()
                 .map((_)=>(
-                    <p>✡</p>
+                    <img src={star} alt=""/>
                 ))}
             </div>
             </div>
-            <img src={image} alt=""/>
-            <button onClick={addToBasket}>Add to basket</button>
+            <div className="button">
+                <p className="click_button" onClick={addToBasket}>ADD TO CART</p> 
+            </div>
         </div>
     )
 }

@@ -42,9 +42,11 @@ console.log("User is >>>>",user);
          <Header/>
          <Checkout/>
          </Route>
+
          <Route path="/login">
            <Login/>
          </Route>
+         
          <Route path="/">
            <Header/>
           <Home/>

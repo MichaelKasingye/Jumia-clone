@@ -3,9 +3,12 @@
     margin: auto auto;
 }
 .home_row{
+    width: 100%;
     display: flex;
-    /* z-index: 1; */
-    margin: 5px 5px;
-    /* background-color: aliceblue; */
+    flex-wrap: wrap;
 }
+.home_row>*{
+    flex: 1;
+}
+
 
