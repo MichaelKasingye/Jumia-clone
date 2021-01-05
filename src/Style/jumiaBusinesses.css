@@ -1,0 +1,22 @@
+.jumiaBusinesses{
+    display: flex;
+    justify-content: space-between;
+}
+.business{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    margin: 10px;
+}
+.business span{
+    font-weight: 500;
+    font-size: 13px;
+    margin: 5px;
+}
+.business_image{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 5px;
+
+}

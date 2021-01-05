@@ -4,13 +4,14 @@
     /* align-items: center; */
     height: 20rem;
 }
-.showcase{
-
+ .showcase{
+    width: 40rem;
+    height: 100%;
 }
 .home_image{
-    width: 100%;
-    height: 100%;
-    /* object-fit: contain; */
+    /* width: 100%;
+    height: 100%; */
+    object-fit: contain;
 
    /* z-index: -1; */
 }
@@ -18,12 +19,17 @@
     margin: 0 10px 0 0px;
     background-color: #FFFFFF;
     height: 100%;
-    width: 20rem;
+    width: 14rem;
+}
+.category_icons{
+    height: 10px;
+    width: 1px;
 }
 .category_items{
     display: flex;
     /* justify-content: center; */
     align-items: center;
+    margin: 10px;
 
 }
 .category_items span{
@@ -33,6 +39,7 @@ margin-left: 5px;
 .right_section{
     margin-left: 10px;
     height: 100%;
+    width: 17rem;
 }
 .right_section_content{
     display: flex;
@@ -44,20 +51,55 @@ margin-left: 5px;
 .right_section_content_items{
     display: flex;
     align-items: center;
+    margin: 10px;
 }
-.right_section_content img{
+.right_section_content_items img{
     height: 1.5rem;
     width: 1.5rem;
 }
-.right_section_content span{
-    font-size: 10px;
-    font-weight: bold;
+.right_section_content_items .title{
+    font-size: 12px;
+    font-weight: 500;
     margin-left: 5px;
 }
+.right_section_content_items .desc{
+    font-weight: 400;
+    font-size: 10px;
+}
 
-.right_section_ads img{
+.right_section_ads{
     margin-top: 10px;
+    width: 16rem;
+
+}
+.right_section_ads video{
     height: 9.4rem;
-    width: 9.5rem;
+    width: 100%;
     /* object-fit: contain; */
 }
+
+/* TRANSITIONS */
+.showcase {
+    /* transition-duration: 2s; */
+    animation-name: and;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  @keyframes and {
+    0% {
+        background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg") no-repeat center center / cover;
+
+    }
+    30% {
+        background: url("../images/jumia_images/Holiday-Savings-Slider-4.jpg") no-repeat center center / cover;
+    }
+    
+    65% {
+        background: url("../images/jumia_images/Jumia-Prime-3-Slider.jpg") no-repeat center center / cover;
+    }
+
+    100% {
+        background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg") no-repeat center center / cover;
+    }
+  }

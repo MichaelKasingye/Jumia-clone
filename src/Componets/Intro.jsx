@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Style/Intro.css'
-import {images} from '../Library/images'
+import {images} from '../Library/images';
+import Video from "../video/ad.mp4";
 import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
 import PhoneIphoneOutlinedIcon from '@material-ui/icons/PhoneIphoneOutlined';
 import TvOutlinedIcon from '@material-ui/icons/TvOutlined';
@@ -27,25 +28,28 @@ function Intro() {
                 <ComputerOutlinedIcon/><span>Computing</span>
                 </div>
             </div>
-
+            
             <div className="showcase">
-           <img className="home_image" src={images.homeImage} alt="showcase"/> 
+           <span className="home_image" 
+        //    src={images.homeImage}
+            // alt="showcase"
+            /> 
             </div>
 
             <div className="right_section">
                 <div className="right_section_content">
                     <div className="right_section_content_items">
-                    <img src={images.helpCenter} alt="Help center"/><span>HELP CENTER</span>
+                    <img src={images.helpCenter} alt="Help center"/><span className="title">HELP CENTER<br/><span className="desc">Guide to customer Care</span></span>
                     </div>
                     <div className="right_section_content_items">
-                    <img src={images.easyReturn} alt="Easy Return"/><span>EASY RETURN</span>
+                    <img src={images.easyReturn} alt="Easy Return"/><span className="title">EASY RETURN <br/><span className="desc">Quick Refund</span></span> 
                     </div>
                     <div className="right_section_content_items">
-                    <img src={images.sell} alt="Sell"/><span>SELL</span>
+                    <img src={images.sell} alt="Sell"/><span className="title">SELL<br/><span className="desc">Millions of Customers</span></span>
                     </div>
                 </div>
                 <div className="right_section_ads">
-                    <img src={images.homeImage} alt="Ad"/>
+                    <video autostart autoPlay muted loop src={Video} alt="Ad"/>
                 </div>
             </div>
 

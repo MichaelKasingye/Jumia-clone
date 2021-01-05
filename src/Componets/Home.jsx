@@ -1,13 +1,14 @@
 import React from 'react'
 import "../Style/Home.css"; 
 import Product from './Product';
-import Intro from './Intro'
+import Intro from './Intro';
+import JumiaBusinesses from './JumiaBusinesses';
 import {images} from '../Library/images'
 function Home() {
     return (
         <div className="home">
             <Intro />
-
+            <JumiaBusinesses />
         <div className="home_row">
         <Product
         id="123443499"
