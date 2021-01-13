@@ -4,11 +4,15 @@
 }
 .business{
     display: flex;
+    flex: wrap;
     align-items: center;
     width: 100%;
     background-color: #fff;
     margin: 10px;
 }
+/* .business>*{
+    flex-basis: 20%;
+} */
 .business span{
     font-weight: 500;
     font-size: 13px;
@@ -19,4 +23,28 @@
     width: 2.5rem;
     margin: 5px;
 
+}
+@media (max-width: 378px) {
+    .off{
+        display: none;
+    }
+ 
+  .jumiaBusinesses{
+      flex-wrap: wrap;
+      width: 350px;
+      margin: auto auto;
+  }
+  .jumiaBusinesses>*{
+    flex: 1;
+    
+}
+  .category_icons{
+      height: 10px;
+      width: 1px;
+  }
+  .category_items{
+      display: flex;
+      margin: 5px;
+  }
+ 
 }

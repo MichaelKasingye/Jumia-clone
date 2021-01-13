@@ -18,10 +18,37 @@
 .CheckoutProduct_rating{
     display: flex;
 }
-.CheckoutProduct_info > button{
-    background-color: #f0c14b;
+.CheckoutProduct_rating img{
+    height: 15px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+.Checkout_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    max-width: 7rem;
+    margin: 0px 0px 5px 0px;
+    border-radius: 5px;
+font-weight:500;
+font-size: 13px;
+padding: 5px;
+    color: aliceblue;
+    background-color: #E4811C;
 border: 1px solid;
 margin-top: 10px;
 border-color: #a88734 #f0c14b #f0c14b;
-color: #111;
-}
+ }
+ .Checkout_button:hover{
+    cursor: pointer;
+    color: #E4811C;
+    background: white;
+border-color: #a88734 #f0c14b #f0c14b;
+ }
+ .Checkout_button:active{
+    cursor: pointer;
+    color: white;
+    background: #E4811C;
+border-color: #a88734 #f0c14b #f0c14b;
+ }

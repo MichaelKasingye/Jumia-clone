@@ -47,17 +47,17 @@ function Header() {
         </Link>
         <Link to="/login" className="header_link">
           <div className="header_option">
-            <span className="header_optionLineOne">
+            <span className="header_optionLineOne help" >
               <HelpOutlineOutlinedIcon />
             </span>
-            <span className="header_optionLineTwo">Help</span>
+            <span className="header_optionLineTwo help">Help</span>
           </div>
         </Link>
 
         <Link to="/checkout" className="header_link">
           <div className="header_optionBasket">
-            <span className="header_optionBasket_title">Cart</span>
-            <ShoppingCartOutlinedIcon />
+            <span className="header_optionBasket_title help">Cart</span>
+            <ShoppingCartOutlinedIcon className="cart_img" />
             <span className="header_optionLineTwo header_basketCount">
               {basket?.length}
             </span>

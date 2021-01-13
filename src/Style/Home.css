@@ -6,9 +6,25 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 .home_row>*{
     flex: 1;
+    /* flex-basis: 29%; */
 }
+@media (max-width: 378px) {
+    .off{
+        display: none;
+    }
+ 
+    .home_row{
+        margin-left:16px ;
+    }
+    .heading{
+        margin-left:26px ;
 
+    }
+ 
+}
 

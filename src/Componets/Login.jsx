@@ -50,10 +50,10 @@ function register(event){
                 </form>
            
            <p>
-           By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. 
+           By continuing, you agree to Jumia's Conditions of Use and Privacy Notice. 
            </p>
            <button className="login_registerButton" onClick ={register}>
-               Create your Amazon Account
+               Create your Jumia Account
            </button>
            </div>
         </div>

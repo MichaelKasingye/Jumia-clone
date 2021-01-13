@@ -1,4 +1,6 @@
 .subtotal{
+    top: 5rem;
+    position:sticky;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,3 +32,32 @@
     color: #111;
 
     }
+    .subtotal > button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        max-width: 100%;
+        margin: 0px 0px 5px 0px;
+        border-radius: 5px;
+    font-weight:700;
+    font-size: 13px;
+    padding: 5px;
+        color: aliceblue;
+        background-color: #E4811C;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #f0c14b #f0c14b;
+     }
+     .Checkout_button:hover{
+        cursor: pointer;
+        color: #E4811C;
+        background: white;
+    border-color: #a88734 #f0c14b #f0c14b;
+     }
+     .Checkout_button:active{
+        cursor: pointer;
+        color: white;
+        background: #E4811C;
+    border-color: #a88734 #f0c14b #f0c14b;
+     }

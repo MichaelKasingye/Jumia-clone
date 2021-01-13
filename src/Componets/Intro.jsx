@@ -42,8 +42,8 @@ function Intro() {
         />
       </div>
 
-      <div className="right_section">
-        <div className="right_section_content">
+      <div className="right_section off">
+        <div className="right_section_content ">
           <div className="right_section_content_items">
             <img src={images.helpCenter} alt="Help center" />
             <span className="title">
@@ -69,7 +69,7 @@ function Intro() {
           </div>
         </div>
         <div className="right_section_ads">
-          <video autostart autoPlay muted loop src={Video} alt="Ad" />
+          <video autostart="true" autoPlay muted loop src={Video} alt="Ad" />
         </div>
       </div>
     </div>

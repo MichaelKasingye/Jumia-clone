@@ -5,6 +5,7 @@ import Header from './Componets/Header';
 import Home from './Componets/Home';
 import Checkout from './Componets/Checkout';
 import Login from './Componets/Login';
+import Footer from './Componets/Footer'
 import { useStateValue } from '../src/ContextAPI/StateProvider';
 import {auth} from "./FireBase/Firebase";
 import { Unsubscribe } from '@material-ui/icons';
@@ -41,6 +42,7 @@ console.log("User is >>>>",user);
          <Route path="/checkout">
          <Header/>
          <Checkout/>
+         <Footer/>
          </Route>
 
          <Route path="/login">
@@ -50,6 +52,7 @@ console.log("User is >>>>",user);
          <Route path="/">
            <Header/>
           <Home/>
+          <Footer/>
          </Route>
        </Switch>
     </div>

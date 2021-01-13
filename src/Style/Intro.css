@@ -1,7 +1,6 @@
 .intro{
     display: flex;
     margin: 10px 15px;
-    /* align-items: center; */
     height: 20rem;
 }
  .showcase{
@@ -9,11 +8,7 @@
     height: 100%;
 }
 .home_image{
-    /* width: 100%;
-    height: 100%; */
     object-fit: contain;
-
-   /* z-index: -1; */
 }
 .categories{
     margin: 0 10px 0 0px;
@@ -27,10 +22,12 @@
 }
 .category_items{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin: 10px;
 
+}
+.category_items:hover{
+   color:#E4811C ;
 }
 .category_items span{
 font-size: 10px;
@@ -45,22 +42,21 @@ margin-left: 5px;
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    /* height: 10rem; */
+    max-height: 9rem;
+    padding: 9px;
     
 }
 .right_section_content_items{
-    /* border: 2px solid black; */
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* margin: 3px; */
+    max-height: 3.4rem;
+    margin: 0px;
     padding-left: 10px;
 }
 .right_section_content_items img{
-    /* border: 2px solid black; */
-    height: 1.5rem;
+    max-height: 1.5rem;
     width: 1.5rem;
-    padding-bottom: 10px;
+    padding-bottom: 17px;
 }
 .right_section_content_items .title{
     margin-top: 5px;
@@ -77,17 +73,14 @@ margin-left: 5px;
 .right_section_ads{
     margin-top: 12px;
     width: 16rem;
-
 }
 .right_section_ads video{
-    height: 9.4rem;
+   height: 100%;
     width: 100%;
-    /* object-fit: contain; */
 }
 
 /* TRANSITIONS */
 .showcase {
-    /* transition-duration: 2s; */
     animation-name: and;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -110,3 +103,33 @@ margin-left: 5px;
         background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg") no-repeat center center / cover;
     }
   }
+
+  @media (max-width: 378px) {
+      .off{
+          display: none;
+      }
+    .intro{
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;       
+    }
+    .categories{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20rem;
+        margin: auto auto;
+        margin-bottom: 0px;
+        /* margin-right:15px ; */
+    }
+    .category_icons{
+        height: 10px;
+        width: 1px;
+    }
+    .category_items{
+        display: flex;
+        margin: 5px;
+    }
+   
+  }
+  

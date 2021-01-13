@@ -1,10 +1,16 @@
 .checkout{
+    max-width: 1460px;
+    margin: auto auto;
+    margin-top: 10px;
     display: flex ;
+    justify-content: space-between;
     padding: 20px;
     background-color: white;
     height: max-content;
 }
 .checkout_title{
+    width: 100%;
+
     margin-left: 10px;
     padding: 10px;
     border-bottom: 1px solid lightgray;

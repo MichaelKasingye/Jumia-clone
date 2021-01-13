@@ -33,12 +33,12 @@ function Product({id,title,image,price,rating}) {
                 {Array(rating)
                 .fill()
                 .map((_)=>(
-                    <img src={star} alt=""/>
+                    <img key={Math.floor(Math.random() * 1000000)} src={star} alt=""/>
                 ))}
             </div>
             </div>
             <div className="button">
-                <p className="click_button" onClick={addToBasket}>ADD TO CART</p> 
+                <p className="click_button" >ADD TO CART</p> 
             </div>
         </div>
     )

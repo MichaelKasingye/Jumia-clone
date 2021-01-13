@@ -3,56 +3,92 @@ import "../Style/Home.css";
 import Product from './Product';
 import Intro from './Intro';
 import JumiaBusinesses from './JumiaBusinesses';
-import {images} from '../Library/images'
+import Heading from './Heading';
+import {images} from '../Library/images';
+import {data} from '../Library/stock';
+
 function Home() {
     return (
         <div className="home">
             <Intro />
             <JumiaBusinesses />
+
+            <Heading heading="Supermarket" className="heading"/>
         <div className="home_row">
-        <Product
-        id="123443499"
-        title="I phone 11 pro 2017 8gb ram 168 HD memory"
-        price={112.36}
-        rating={5}
-        image={images.iphone}
-        />
-        <Product
-        id="12348887"
-        title="movie: Van Man"
-        price={112.36}
-        rating={5}
-        image={images.iphone}
-        />
-        <Product
-        id="12344890"
-        title="movie: Van Man"
-        price={112.36}
-        rating={5}
-        image={images.iphone}
-        />
-         <Product
-        id="123443499"
-        title="I phone 11 pro 2017 8gb ram 168 HD memory"
-        price={112.36}
-        rating={5}
-        image={images.iphone}
-        />
-        <Product
-        id="12348887"
-        title="movie: Van Man"
-        price={112.36}
-        rating={5}
-        image={images.iphone}
-        />
-        <Product
-        id="12344890"
-        title="movie: Van Man"
-        price={112.36}
-        rating={5}
-        image={images.iphone}
-        />
+       {
+           data.filter(pdt => pdt.category ==="Supermarket" ).map(item => (
+            <Product
+            key={item.id}
+            title={item.desc}
+            price={item.price}
+            rating={item.star}
+            image={item.image}
+            />
+           ))
+       }
         </div>
+
+        <Heading heading="Phones and Tablets" className="heading"/>
+        <div className="home_row">
+       {
+           data.filter(pdt => pdt.category ==="Phones and Tablets" ).map(item => (
+            <Product
+            key={item.id}
+            title={item.desc}
+            price={item.price}
+            rating={item.star}
+            image={item.image}
+            />
+           ))
+       }
+        </div>
+
+        <Heading heading="Electronics" className="heading"/>
+        <div className="home_row">
+       {
+           data.filter(pdt => pdt.category ==="Electronics" ).map(item => (
+            <Product
+            key={item.id}
+            title={item.desc}
+            price={item.price}
+            rating={item.star}
+            image={item.image}
+            />
+           ))
+       }
+        </div>
+        
+        <Heading heading="Sports" className="heading"/>
+        <div className="home_row">
+       {
+           data.filter(pdt => pdt.category ==="Sports" ).map(item => (
+            <Product
+            key={item.id}
+            title={item.desc}
+            price={item.price}
+            rating={item.star}
+            image={item.image}
+            />
+           ))
+       }
+        </div>
+
+        <Heading heading="Computing" className="heading"/>
+        <div className="home_row">
+       {
+           data.filter(pdt => pdt.category ==="computing" ).map(item => (
+            <Product
+            key={item.id}
+            title={item.desc}
+            price={item.price}
+            rating={item.star}
+            image={item.image}
+            />
+           ))
+       }
+        </div>
+        {/* <Footer /> */}
+
         </div>
     )
 }
