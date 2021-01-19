@@ -4,6 +4,7 @@ import{BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from './Componets/Header';
 import Home from './Componets/Home';
 import Checkout from './Componets/Checkout';
+import Search from './Componets/Search'
 import Login from './Componets/Login';
 import Footer from './Componets/Footer'
 import { useStateValue } from '../src/ContextAPI/StateProvider';
@@ -39,6 +40,11 @@ console.log("User is >>>>",user);
     <Router>
     <div className="App">
        <Switch>
+
+         <Route path="/search">
+        <Search/>
+         </Route>
+
          <Route path="/checkout">
          <Header/>
          <Checkout/>
@@ -54,6 +60,7 @@ console.log("User is >>>>",user);
           <Home/>
           <Footer/>
          </Route>
+
        </Switch>
     </div>
     </Router>

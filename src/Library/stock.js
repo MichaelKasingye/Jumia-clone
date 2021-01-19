@@ -31,7 +31,7 @@ import printer from '../images/computing/printer.jpg'
         "product": "cocksoda",
         "image": cocksoda,
         "desc": "Coca-cola Soda, 2 Liters",
-        "price": "3800",
+        "price": 3800,
         "star": 3
       },
       {
@@ -40,7 +40,7 @@ import printer from '../images/computing/printer.jpg'
         "product": "Lato Milk",
         "image": LatoMilk,
         "desc": "Lato Milk - 400g",
-        "price": "13667",
+        "price": 13667,
         "star": 4
       },
       {
@@ -49,7 +49,7 @@ import printer from '../images/computing/printer.jpg'
         "product": "Soap",
         "image": Soap,
         "desc": "Omo Omo Fast Action Hand Washing Powder - 1kg",
-        "price": "5900",
+        "price": 5900,
         "star": 5
       },
       {
@@ -58,7 +58,7 @@ import printer from '../images/computing/printer.jpg'
         "product": "Pasta",
         "image": pasta,
         "desc": "Golda Penne Rigate - 500g",
-        "price": "4900",
+        "price": 4900,
         "star": 3
       },
       {
@@ -67,7 +67,7 @@ import printer from '../images/computing/printer.jpg'
         "product": "Sugar",
         "image": sugar,
         "desc": "Kinyara Sugar Kinyara Irresistibly Sweet Sugar - 1Kg",
-        "price": "3400",
+        "price": 3400,
         "star": 4
       },
 
@@ -79,7 +79,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Earphones ",
          "image": earphones,
          "desc": "Generic Bluetooth Wireless Earphones With Charging Case",
-         "price": "18500",
+         "price": 18500,
          "star": 1
        },
        {
@@ -88,7 +88,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "I phone 12",
          "image": iphone,
          "desc": "I phone 11 pro 2017 8gb ram 168 HD memory",
-         "price": "2000000",
+         "price": 2000000,
          "star": 4
        },
        {
@@ -97,7 +97,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Nokia",
          "image": nokia,
          "desc": "Nokia 105 DS'' Dual Sim, FM Radio, Black",
-         "price": "5900",
+         "price": 5900,
          "star": 3
        },
        {
@@ -106,7 +106,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Techno",
          "image": techno,
          "desc": "Tecno Pop 4 - 6.0 2GB RAM 5000mAh - Green",
-         "price": "330000",
+         "price": 330000,
          "star": 4
        },
        {
@@ -115,7 +115,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Tablet",
          "image": tablet,
          "desc": "Note 4 Plus 4G LTE Tablet 4GB RAM 64GB Dual Sim",
-         "price": "350000",
+         "price": 350000,
          "star": 5
        },
 
@@ -127,7 +127,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Speaker ",
          "image": speaker1,
          "desc": "Golden Tech 5.1Sub-woofer - Black",
-         "price": "455000",
+         "price": 455000,
          "star": 2
        },
        {
@@ -136,7 +136,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Speaker",
          "image": speaker2,
          "desc": "Generic GO 2 Speaker Wireless Portable Music Player IPX7",
-         "price": "118623",
+         "price": 118623,
          "star": 1
        },
        {
@@ -145,7 +145,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Hisense",
          "image": tv1,
          "desc": "Hisense 55'' Inch 4K Ultra HD Smart TV - Black",
-         "price": "2590000",
+         "price": 2590000,
          "star": 3
        },
        {
@@ -154,7 +154,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Samsung",
          "image": tv2,
          "desc": "Samsung 55'', Smart LED TV, Curve UHD TV4K - Black",
-         "price": "5500000",
+         "price": 5500000,
          "star": 3
        },
        {
@@ -163,7 +163,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Hisense",
          "image": tv1,
          "desc": "Hisense 55'' Inch 4K Ultra HD",
-         "price": "550000",
+         "price": 550000,
          "star": 2
        },
 
@@ -175,7 +175,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Armband ",
          "image": armband,
          "desc": "Other Captain's - Black.",
-         "price": "18000",
+         "price": 18000,
          "star": 2
        },
        {
@@ -184,7 +184,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Generic Ball",
          "image": ball,
          "desc": "Generic Spectacular Size 5 Football /Soccer Ball - White/Blue",
-         "price": "35000",
+         "price": 35000,
          "star": 1
        },
        {
@@ -193,7 +193,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Ball",
          "image": ball2,
          "desc": "Spectacular Size 5 Football",
-         "price": "30000",
+         "price": 30000,
          "star": 4
        },
        {
@@ -202,7 +202,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Trainner",
          "image": fitness,
          "desc": "Generic Electric Muscle Training Abdominal Machine - Black",
-         "price": "24700",
+         "price": 24700,
          "star": "4"
        },
        {
@@ -211,7 +211,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Waist traner",
          "image": waisttraner,
          "desc": "Generic Waist Trainer Belt Waist Cincher Trimmer - Sport Girdle Belt",
-         "price": "55426",
+         "price": 55426,
          "star": 5
        }, 
 
@@ -224,7 +224,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Dell ",
          "image": dell,
          "desc": "DELL DELL Refurbished  Core i5 4GB RAM 500GB ROM - Black",
-         "price": "859020",
+         "price": 859020,
          "star": 2
        },
        {
@@ -233,7 +233,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Scan Disk",
          "image": fd,
          "desc": "Sandisk 16GB Sandisk 2.0 Cruzerblade Flash Disk - Red,Black",
-         "price": "19000",
+         "price": 19000,
          "star": 1
        },
        {
@@ -242,7 +242,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Hard Disk",
          "image": HDD,
          "desc": "Transcend 1TB Transcend Portable USB 3.0 Hard Disk - Black, Green",
-         "price": "210000",
+         "price": 210000,
          "star": 5
        },
        {
@@ -251,7 +251,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Mouse",
          "image": mouse,
          "desc": "Generic 2.4 GHz Ultra Slim Wireless Mouse - Black",
-         "price": "15000",
+         "price": 15000,
          "star": 4
        },
        {
@@ -260,7 +260,7 @@ import printer from '../images/computing/printer.jpg'
          "product": "Printer",
          "image": printer,
          "desc": "Hp Deskjet All-in-One Inkjet Printer- White",
-         "price": "175000",
+         "price": 175000,
          "star": 3
        } 
 

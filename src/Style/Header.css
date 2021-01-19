@@ -83,7 +83,8 @@
 }
 @media (max-width: 320px) {
     .header{
-    width: 375px;
+    /* width: 420px; */
+    /* max-width: 900px; */
     margin: auto auto;
     }
   .header_logo {
@@ -106,7 +107,7 @@
     font-size: 12px;
     margin-left: 0px;
   }
-  .help {
+  .gone {
     display: none;
   }
   .header_basketCount {
@@ -116,5 +117,48 @@
     font-size: 13px;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 680px) {
+  .header{
+  max-width: 690px;
+  margin: auto auto;
+  }
+.header_logo {
+  width: 80px;
+  margin: 7px;
+}
+.search_button {
+  display: none;
+}
+.header_searchIcon {
+  height: 20px !important;
+}
+.header_option {
+  margin: 10px 2px;
+}
+.header_optionLineOne {
+  font-size: 10px;
+}
+.header_optionLineTwo {
+  font-size: 12px;
+  margin-left: 0px;
+}
+.gone {
+  display: none;
+}
+.header_basketCount {
+  margin-right: 5px;
+}
+.header_optionBasket_title {
+  font-size: 13px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+}
+@media (max-width: 250px){
+  .off_cart{
+      display: none;
   }
 }

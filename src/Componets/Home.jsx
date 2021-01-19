@@ -6,6 +6,7 @@ import JumiaBusinesses from './JumiaBusinesses';
 import Heading from './Heading';
 import {images} from '../Library/images';
 import {data} from '../Library/stock';
+import CurrencyFormat from 'react-currency-format';
 
 function Home() {
     return (
@@ -18,6 +19,7 @@ function Home() {
        {
            data.filter(pdt => pdt.category ==="Supermarket" ).map(item => (
             <Product
+            id={item.id}
             key={item.id}
             title={item.desc}
             price={item.price}
@@ -27,6 +29,29 @@ function Home() {
            ))
        }
         </div>
+
+
+       {/* TEST */}
+      
+            
+        <Heading heading="Phones and Tablets" className="heading"/>
+        <div className="home_row">
+       {
+           data.filter(pdt => pdt.category ==="Phones and Tablets" ).map(item => (
+            <Product
+            key={item.id}
+            title={item.desc}
+            price={item.price}
+            rating={item.star}
+            image={item.image}
+            />
+           ))
+       }
+        </div>
+
+
+
+
 
         <Heading heading="Phones and Tablets" className="heading"/>
         <div className="home_row">

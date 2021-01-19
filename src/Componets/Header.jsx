@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../Style/Header.css";
 import { images } from "../Library/images";
 
@@ -7,11 +7,18 @@ import SearchIcon from "@material-ui/icons/Search";
 import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import {useHistory} from "react-router-dom";
+import {actionTypes} from "../ContextAPI/Reducer";
 import { useStateValue } from "../ContextAPI/StateProvider";
 import { auth } from "../FireBase/Firebase";
 
 function Header() {
   const [{ basket, user }] = useStateValue();
+
+  //  const [result, setResult] = useState();
+const [input, setInput] = useState();
+const [{}, dispatch] = useStateValue();
+const history = useHistory();
 
   function login() {
     if (user) {
@@ -19,21 +26,38 @@ function Header() {
     }
   }
 
+//SEARCH
+function search(e) {
+  e.preventDefault();
+  console.log('you hit', input);
+
+  dispatch({
+    type: actionTypes.SET_SEARCH_TERM,
+    term: input
+  })
+
+  history.push('/search')
+};
+
+
   console.log(basket);
   return (
     <nav className="header">
       <Link to="/login">
         <img className="header_logo" src={images.logo} alt="logo" />
       </Link>
+      <form action="" className="header_search">
       <div className="header_search">
         <SearchIcon className="header_searchIcon" />
-        <input
+        <input value={input} onChange={e=>setInput(e.currentTarget.value)}
           type="text"
           placeholder="Search products, brands and categories"
           className="header_searchInput"
         />
       </div>
-      <button className="search_button">SEARCH </button>
+      <button type='submit' onClick={search} className="search_button">SEARCH </button>
+      </form>
+
       <div className="header_nav">
         <Link to={!user && "/login"} className="header_link">
           <div onClick={login} className="header_option">
@@ -47,16 +71,16 @@ function Header() {
         </Link>
         <Link to="/login" className="header_link">
           <div className="header_option">
-            <span className="header_optionLineOne help" >
+            <span className="header_optionLineOne gone" >
               <HelpOutlineOutlinedIcon />
             </span>
-            <span className="header_optionLineTwo help">Help</span>
+            <span className="header_optionLineTwo gone">Help</span>
           </div>
         </Link>
 
-        <Link to="/checkout" className="header_link">
+        <Link to="/checkout" className="header_link ">
           <div className="header_optionBasket">
-            <span className="header_optionBasket_title help">Cart</span>
+            <span className="header_optionBasket_title gone">Cart</span>
             <ShoppingCartOutlinedIcon className="cart_img" />
             <span className="header_optionLineTwo header_basketCount">
               {basket?.length}

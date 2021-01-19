@@ -3,6 +3,7 @@ import CurrencyFormat from 'react-currency-format';
 import { getbasketTotal } from '../ContextAPI/Reducer';
 import { useStateValue } from '../ContextAPI/StateProvider';
 import '../Style/Subtotal.css';
+
 function Subtotal() {
     const [{basket}] = useStateValue();
     return (
@@ -23,7 +24,7 @@ function Subtotal() {
             value={getbasketTotal(basket)}
             displayType={"text"}
             thousandSeparator={true}
-            prefix={"$"}
+            prefix={"UGX: "}
             />
             <button>CHECKOUT</button>
         </div>

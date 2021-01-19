@@ -28,3 +28,21 @@
 
     )
     } */}
+
+
+    products.js
+    {/* <img src={image} alt=""/>
+            <div className="product_info">
+           <p className="title">{title}</p> 
+           <p className="product_price">
+               <span>UGX </span>
+            <span>{price}</span>
+            </p>
+            <div className="product_rating">
+                {Array(rating)
+                .fill()
+                .map((_)=>(
+                    <img key={Math.floor(Math.random() * 1000000)} src={star} alt=""/>
+                ))}
+            </div>
+            </div> */}

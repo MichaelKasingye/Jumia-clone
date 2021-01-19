@@ -61,3 +61,22 @@
         background: #E4811C;
     border-color: #a88734 #f0c14b #f0c14b;
      }
+
+     @media (max-width: 640px){
+        .off_cart{
+            display: none;
+        }
+        .subtotal{
+            max-width: 15rem;
+        }
+
+      }
+      @media (max-width: 404px){
+        .off_cart{
+            display: none;
+        }
+        .subtotal{
+            max-width: 12rem;
+        }
+
+      }

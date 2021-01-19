@@ -19,10 +19,11 @@
     }
  
     .home_row{
-        margin-left:16px ;
+        /* margin-left:2.5rem ; */
     }
     .heading{
-        margin-left:26px ;
+        /* margin-left:6rem ; */
+        /* max-width: 25rem; */
 
     }
  

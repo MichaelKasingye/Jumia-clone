@@ -31,8 +31,10 @@
  
   .jumiaBusinesses{
       flex-wrap: wrap;
-      width: 350px;
+      max-width: 350px;
       margin: auto auto;
+      margin-left: 1.2rem; 
+
   }
   .jumiaBusinesses>*{
     flex: 1;
@@ -47,4 +49,17 @@
       margin: 5px;
   }
  
+}
+@media (max-width: 468px) {
+    .jumiaBusinesses{
+        flex-wrap: wrap;
+        max-width: 350px;
+        margin: auto auto;
+        margin-left: 1.2rem; 
+  
+    }
+    .jumiaBusinesses>*{
+      flex: 1 1 30%;
+      
+  }
 }
