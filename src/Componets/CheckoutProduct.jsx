@@ -5,13 +5,14 @@ import '../Style/CheckoutProduct.css';
 import CurrencyFormat from 'react-currency-format';
 
 
-function CheckoutProduct({id,title,image,price,rating}) {
+function CheckoutProduct({key,id,title,image,price,rating}) {
     const [{basket},dispatch] = useStateValue();
-    console.log(id,title,image,price,rating);
+    console.log(key,id,title,image,price,rating);
     function removeFromBasket(){
         dispatch({
             type:"REMOVE_TO_BASKET",
             id:id,
+            key:key,
         });
     }
     return (
@@ -21,6 +22,7 @@ function CheckoutProduct({id,title,image,price,rating}) {
 <CurrencyFormat 
             renderText={(price)=>(
             <>
+            <div id={key} key={key}>
             <img className="CheckoutProduct_image" src={image} alt=""/>
             
             <div className="CheckoutProduct_info">
@@ -33,10 +35,11 @@ function CheckoutProduct({id,title,image,price,rating}) {
                 {Array(rating)
                 .fill()
                 .map((_)=>(
-                    <img  src={star} alt=""/>
+                    <img key={key} src={star} alt=""/>
                 ))}
             </div>
             <p className="Checkout_button" onClick={removeFromBasket}>REMOVE</p>
+            </div>
             </div>
                 </>
             )}

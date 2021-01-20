@@ -26,7 +26,7 @@ import printer from '../images/computing/printer.jpg'
 
   export const data = [
   {
-       "id": "s1",
+       "id": 1,
         "category":"Supermarket",
         "product": "cocksoda",
         "image": cocksoda,
@@ -35,7 +35,7 @@ import printer from '../images/computing/printer.jpg'
         "star": 3
       },
       {
-        "id": "s2",
+        "id": 2,
         "category":"Supermarket",
         "product": "Lato Milk",
         "image": LatoMilk,
@@ -44,7 +44,7 @@ import printer from '../images/computing/printer.jpg'
         "star": 4
       },
       {
-        "id": "s3",
+        "id": 3,
         "category":"Supermarket",
         "product": "Soap",
         "image": Soap,
@@ -53,7 +53,7 @@ import printer from '../images/computing/printer.jpg'
         "star": 5
       },
       {
-        "id": "s4",
+        "id": 4,
         "category":"Supermarket",
         "product": "Pasta",
         "image": pasta,
@@ -62,7 +62,7 @@ import printer from '../images/computing/printer.jpg'
         "star": 3
       },
       {
-        "id": "s5",
+        "id": 5,
         "category":"Supermarket",
         "product": "Sugar",
         "image": sugar,
@@ -74,7 +74,7 @@ import printer from '../images/computing/printer.jpg'
 
       
       {
-        "id": "pt1",
+        id: 6,
          "category":"Phones and Tablets",
          "product": "Earphones ",
          "image": earphones,
@@ -83,7 +83,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 1
        },
        {
-         "id": "pt2",
+         id: 7,
          "category":"Phones and Tablets",
          "product": "I phone 12",
          "image": iphone,
@@ -92,7 +92,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 4
        },
        {
-         "id": "pt3",
+         id: 7,
          "category":"Phones and Tablets",
          "product": "Nokia",
          "image": nokia,
@@ -101,7 +101,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 3
        },
        {
-         "id": "pt4",
+         id: 8,
          "category":"Phones and Tablets",
          "product": "Techno",
          "image": techno,
@@ -110,7 +110,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 4
        },
        {
-         "id": "pt5",
+         id: 9,
          "category":"Phones and Tablets",
          "product": "Tablet",
          "image": tablet,
@@ -122,7 +122,7 @@ import printer from '../images/computing/printer.jpg'
 
 
        {
-        "id": "e1",
+        id: 0,
          "category":"Electronics",
          "product": "Speaker ",
          "image": speaker1,
@@ -131,7 +131,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 2
        },
        {
-         "id": "e2",
+         id: 11,
          "category":"Electronics",
          "product": "Speaker",
          "image": speaker2,
@@ -140,7 +140,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 1
        },
        {
-         "id": "e3",
+         id: 12,
          "category":"Electronics",
          "product": "Hisense",
          "image": tv1,
@@ -149,7 +149,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 3
        },
        {
-         "id": "e4",
+         id: 13,
          "category":"Electronics",
          "product": "Samsung",
          "image": tv2,
@@ -158,7 +158,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 3
        },
        {
-         "id": "e5",
+         id: 14,
          "category":"Electronics",
          "product": "Hisense",
          "image": tv1,
@@ -170,7 +170,7 @@ import printer from '../images/computing/printer.jpg'
 
 
        {
-        "id": "sg1",
+        id: 15,
          "category":"Sports",
          "product": "Armband ",
          "image": armband,
@@ -179,7 +179,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 2
        },
        {
-         "id": "sg2",
+         id: 16,
          "category":"Sports",
          "product": "Generic Ball",
          "image": ball,
@@ -188,7 +188,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 1
        },
        {
-         "id": "sg3",
+         id: 17,
          "category":"Sports",
          "product": "Ball",
          "image": ball2,
@@ -197,7 +197,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 4
        },
        {
-         "id": "sg4",
+         id: "sg4",
          "category":"Sports",
          "product": "Trainner",
          "image": fitness,
@@ -206,7 +206,7 @@ import printer from '../images/computing/printer.jpg'
          "star": "4"
        },
        {
-         "id": "sg5",
+        id: 18,
          "category":"Sports",
          "product": "Waist traner",
          "image": waisttraner,
@@ -219,7 +219,7 @@ import printer from '../images/computing/printer.jpg'
 
 
        {
-        "id": "c1",
+        id: 19,
          "category":"computing",
          "product": "Dell ",
          "image": dell,
@@ -228,7 +228,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 2
        },
        {
-         "id": "c2",
+         id: 20,
          "category":"computing",
          "product": "Scan Disk",
          "image": fd,
@@ -237,7 +237,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 1
        },
        {
-         "id": "c3",
+         id: 23,
          "category":"computing",
          "product": "Hard Disk",
          "image": HDD,
@@ -246,7 +246,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 5
        },
        {
-         "id": "c4",
+         id: 24,
          "category":"computing",
          "product": "Mouse",
          "image": mouse,
@@ -255,7 +255,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 4
        },
        {
-         "id": "c5",
+         id: 28,
          "category":"computing",
          "product": "Printer",
          "image": printer,

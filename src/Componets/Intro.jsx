@@ -1,6 +1,7 @@
 import React from "react";
 import "../Style/Intro.css";
 import { images } from "../Library/images";
+import { Link } from "react-router-dom";
 import Video from "../video/ad.mp4";
 import StorefrontOutlinedIcon from "@material-ui/icons/StorefrontOutlined";
 import PhoneIphoneOutlinedIcon from "@material-ui/icons/PhoneIphoneOutlined";
@@ -12,26 +13,37 @@ function Intro() {
   return (
     <div className="intro">
       <div className="categories">
+     
+          <Link to="/supermarket">
         <div className="category_items">
           <StorefrontOutlinedIcon />
           <span>Supermarket</span>
         </div>
+          </Link>
+        <Link to="/phoneTablets">
         <div className="category_items">
           <PhoneIphoneOutlinedIcon />
           <span>Phone & Tablets</span>
         </div>
+          </Link>
+        <Link to="/electronics">
         <div className="category_items">
           <TvOutlinedIcon />
           <span>Electronics</span>
         </div>
+          </Link>
+        <Link to="/sporting">
         <div className="category_items">
           <FitnessCenterOutlinedIcon />
           <span>Sporting Goods</span>
         </div>
+          </Link>
+        <Link to="/computing">
         <div className="category_items">
           <ComputerOutlinedIcon />
           <span>Computing</span>
         </div>
+          </Link>
       </div>
 
       <div className="showcase">

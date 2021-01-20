@@ -17,7 +17,7 @@ function Home() {
             <Heading heading="Supermarket" className="heading"/>
         <div className="home_row">
        {
-           data.filter(pdt => pdt.category ==="Supermarket" ).map(item => (
+           data.filter(filrterdData => filrterdData.category ==="Supermarket" ).slice(0, 5).map(item => (
             <Product
             id={item.id}
             key={item.id}
@@ -37,27 +37,9 @@ function Home() {
         <Heading heading="Phones and Tablets" className="heading"/>
         <div className="home_row">
        {
-           data.filter(pdt => pdt.category ==="Phones and Tablets" ).map(item => (
+           data.filter(filrterdData => filrterdData.category ==="Phones and Tablets" ).slice(0, 5).map(item => (
             <Product
-            key={item.id}
-            title={item.desc}
-            price={item.price}
-            rating={item.star}
-            image={item.image}
-            />
-           ))
-       }
-        </div>
-
-
-
-
-
-        <Heading heading="Phones and Tablets" className="heading"/>
-        <div className="home_row">
-       {
-           data.filter(pdt => pdt.category ==="Phones and Tablets" ).map(item => (
-            <Product
+            id={item.id}
             key={item.id}
             title={item.desc}
             price={item.price}
@@ -71,8 +53,9 @@ function Home() {
         <Heading heading="Electronics" className="heading"/>
         <div className="home_row">
        {
-           data.filter(pdt => pdt.category ==="Electronics" ).map(item => (
+           data.filter(filrterdData => filrterdData.category ==="Electronics" ).slice(0, 5).map(item => (
             <Product
+            id={item.id}
             key={item.id}
             title={item.desc}
             price={item.price}
@@ -86,8 +69,9 @@ function Home() {
         <Heading heading="Sports" className="heading"/>
         <div className="home_row">
        {
-           data.filter(pdt => pdt.category ==="Sports" ).map(item => (
+           data.filter(filrterdData => filrterdData.category ==="Sports" ).slice(0, 5).map(item => (
             <Product
+            id={item.id}
             key={item.id}
             title={item.desc}
             price={item.price}
@@ -101,8 +85,9 @@ function Home() {
         <Heading heading="Computing" className="heading"/>
         <div className="home_row">
        {
-           data.filter(pdt => pdt.category ==="computing" ).map(item => (
+           data.filter(filrterdData => filrterdData.category ==="computing" ).slice(0, 5).map(item => (
             <Product
+            id={item.id}
             key={item.id}
             title={item.desc}
             price={item.price}

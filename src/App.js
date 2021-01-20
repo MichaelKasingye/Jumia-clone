@@ -6,7 +6,8 @@ import Home from './Componets/Home';
 import Checkout from './Componets/Checkout';
 import Search from './Componets/Search'
 import Login from './Componets/Login';
-import Footer from './Componets/Footer'
+import Footer from './Componets/Footer';
+import Categories from './Componets/Categories'
 import { useStateValue } from '../src/ContextAPI/StateProvider';
 import {auth} from "./FireBase/Firebase";
 import { Unsubscribe } from '@material-ui/icons';
@@ -40,6 +41,35 @@ console.log("User is >>>>",user);
     <Router>
     <div className="App">
        <Switch>
+       <Route path="/computing">
+       <Header/>
+        <Categories section="computing"/>
+        <Footer/>
+         </Route>
+
+       <Route path="/sporting">
+       <Header/>
+        <Categories section="Sports"/>
+        <Footer/>
+         </Route>
+
+         <Route path="/electronics">
+         <Header/>
+        <Categories section="Electronics"/>
+        <Footer/>
+         </Route>
+
+         <Route path="/phoneTablets">
+         <Header/>
+        <Categories section="Phones and Tablets"/>
+        <Footer/>
+         </Route>
+
+       <Route path="/supermarket">
+       <Header/>
+        <Categories section="Supermarket"/>
+        <Footer/>
+         </Route>
 
          <Route path="/search">
         <Search/>

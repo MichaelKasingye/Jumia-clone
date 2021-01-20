@@ -16,6 +16,11 @@
     height: 100%;
     width: 14rem;
 }
+.categories a{
+    text-decoration: none;
+    color: black;
+
+}
 .category_icons{
     height: 10px;
     width: 1px;
@@ -24,9 +29,8 @@
     display: flex;
     align-items: center;
     margin: 10px;
-
 }
-.category_items:hover{
+.categories a:hover{
    color:#E4811C ;
 }
 .category_items span{

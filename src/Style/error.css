@@ -1,0 +1,13 @@
+.error{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 1100px;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    color: #E4811C;
+    height: 30vh;
+
+}

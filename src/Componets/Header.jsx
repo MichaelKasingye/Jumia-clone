@@ -43,13 +43,13 @@ function search(e) {
   console.log(basket);
   return (
     <nav className="header">
-      <Link to="/login">
+      <Link to="/">
         <img className="header_logo" src={images.logo} alt="logo" />
       </Link>
       <form action="" className="header_search">
       <div className="header_search">
         <SearchIcon className="header_searchIcon" />
-        <input value={input} onChange={e=>setInput(e.currentTarget.value)}
+        <input value={input} onChange={e=>setInput(e.currentTarget.value.toLowerCase())}
           type="text"
           placeholder="Search products, brands and categories"
           className="header_searchInput"

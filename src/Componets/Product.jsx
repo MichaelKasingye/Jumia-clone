@@ -6,13 +6,14 @@ import { useStateValue } from '../ContextAPI/StateProvider';
 import CurrencyFormat from 'react-currency-format';
 
 
-function Product({id,title,image,price,rating}) {
+function Product({key,id,title,image,price,rating}) {
     const[{basket}, dispatch] = useStateValue();
     const addToBasket = ()=>{
         //add item to basket
         dispatch({
             type:'ADD_TO_BASKET',
             item:{
+                key,
                 id,
                 title,
                 image,
@@ -23,11 +24,12 @@ function Product({id,title,image,price,rating}) {
     };
     return (
         <div className="product" onClick={addToBasket}>
-
+            {console.log(basket)}
 
 <CurrencyFormat
             renderText={(price)=>(
             <>
+            {console.log(key, id)}
             <img src={image} alt=""/>
             <div className="product_info">
            <p className="title">{title}</p> 
