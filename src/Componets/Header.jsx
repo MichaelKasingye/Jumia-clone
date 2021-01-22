@@ -14,7 +14,7 @@ import { auth } from "../FireBase/Firebase";
 
 function Header() {
   const [{ basket, user }] = useStateValue();
-  const [input, setInput] = useState();
+  const [input, setInput] = useState("");
   const [{}, dispatch] = useStateValue();
   const history = useHistory();
 
@@ -60,7 +60,6 @@ function Header() {
             type="submit"
             onClick={search}
             className="search_button"
-            formnovalidate="formnovalidate"
           >
             SEARCH{" "}
           </button>
