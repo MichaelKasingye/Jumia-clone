@@ -1,10 +1,10 @@
-.heading{
-    font-size: 1.7rem;
-    background-color:#E4811C;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.heading {
+  font-size: 1.7rem;
+  background-color: #e4811c;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-.heading h5{
-    font-weight: 500;
+.heading h5 {
+  font-weight: 500;
 }

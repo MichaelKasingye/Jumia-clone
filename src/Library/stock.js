@@ -83,7 +83,7 @@ import printer from '../images/computing/printer.jpg'
          "star": 1
        },
        {
-         id: 7,
+         id: 10,
          "category":"Phones and Tablets",
          "product": "I phone 12",
          "image": iphone,

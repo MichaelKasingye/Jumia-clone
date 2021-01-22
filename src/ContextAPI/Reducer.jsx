@@ -11,7 +11,6 @@ export const actionTypes = {
 
 //REDUCER
  function reducer(state,action){
-    console.log("REDUCER ACTION",action);
     switch (action.type) {
         case 'SET_USER':
             return {
@@ -49,7 +48,7 @@ export const actionTypes = {
             return state;
     }
 };
-// export const getbasketTotal = (basket)=> basket?.reduce((amount,item) => item.price + amount,0);
+
 export const getbasketTotal = (basket)=> basket?.reduce((amount,item) => item.price + amount ,0);
 
 export default reducer;

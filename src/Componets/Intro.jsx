@@ -13,45 +13,40 @@ function Intro() {
   return (
     <div className="intro">
       <div className="categories">
-     
-          <Link to="/supermarket">
-        <div className="category_items">
-          <StorefrontOutlinedIcon />
-          <span>Supermarket</span>
-        </div>
-          </Link>
+        <Link to="/supermarket">
+          <div className="category_items">
+            <StorefrontOutlinedIcon />
+            <span>Supermarket</span>
+          </div>
+        </Link>
         <Link to="/phoneTablets">
-        <div className="category_items">
-          <PhoneIphoneOutlinedIcon />
-          <span>Phone & Tablets</span>
-        </div>
-          </Link>
+          <div className="category_items">
+            <PhoneIphoneOutlinedIcon />
+            <span>Phone & Tablets</span>
+          </div>
+        </Link>
         <Link to="/electronics">
-        <div className="category_items">
-          <TvOutlinedIcon />
-          <span>Electronics</span>
-        </div>
-          </Link>
+          <div className="category_items">
+            <TvOutlinedIcon />
+            <span>Electronics</span>
+          </div>
+        </Link>
         <Link to="/sporting">
-        <div className="category_items">
-          <FitnessCenterOutlinedIcon />
-          <span>Sporting Goods</span>
-        </div>
-          </Link>
+          <div className="category_items">
+            <FitnessCenterOutlinedIcon />
+            <span>Sporting Goods</span>
+          </div>
+        </Link>
         <Link to="/computing">
-        <div className="category_items">
-          <ComputerOutlinedIcon />
-          <span>Computing</span>
-        </div>
-          </Link>
+          <div className="category_items">
+            <ComputerOutlinedIcon />
+            <span>Computing</span>
+          </div>
+        </Link>
       </div>
 
       <div className="showcase">
-        <span
-          className="home_image"
-          //    src={images.homeImage}
-          // alt="showcase"
-        />
+        <span className="home_image" />
       </div>
 
       <div className="right_section off">

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "../Style/Header.css";
 import { images } from "../Library/images";
 
@@ -6,19 +6,17 @@ import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import AccountCircleOutlinedIcon from "@material-ui/icons/AccountCircleOutlined";
 import HelpOutlineOutlinedIcon from "@material-ui/icons/HelpOutlineOutlined";
-import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
-import {useHistory} from "react-router-dom";
-import {actionTypes} from "../ContextAPI/Reducer";
+import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
+import { useHistory } from "react-router-dom";
+import { actionTypes } from "../ContextAPI/Reducer";
 import { useStateValue } from "../ContextAPI/StateProvider";
 import { auth } from "../FireBase/Firebase";
 
 function Header() {
   const [{ basket, user }] = useStateValue();
-
-  //  const [result, setResult] = useState();
-const [input, setInput] = useState();
-const [{}, dispatch] = useStateValue();
-const history = useHistory();
+  const [input, setInput] = useState();
+  const [{}, dispatch] = useStateValue();
+  const history = useHistory();
 
   function login() {
     if (user) {
@@ -26,36 +24,47 @@ const history = useHistory();
     }
   }
 
-//SEARCH
-function search(e) {
-  e.preventDefault();
-  console.log('you hit', input);
+  //SEARCH
+  function search(e) {
+    e.preventDefault();
 
-  dispatch({
-    type: actionTypes.SET_SEARCH_TERM,
-    term: input
-  })
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input,
+    });
 
-  history.push('/search')
-};
+    history.push("/search");
+  }
 
-
-  console.log(basket);
   return (
     <nav className="header">
       <Link to="/">
         <img className="header_logo" src={images.logo} alt="logo" />
       </Link>
       <form action="" className="header_search">
-      <div className="header_search">
-        <SearchIcon className="header_searchIcon" />
-        <input value={input} onChange={e=>setInput(e.currentTarget.value.toLowerCase())}
-          type="text"
-          placeholder="Search products, brands and categories"
-          className="header_searchInput"
-        />
-      </div>
-      <button type='submit' onClick={search} className="search_button">SEARCH </button>
+        <div className="header_search">
+          <SearchIcon className="header_searchIcon" />
+          <input
+            value={input}
+            onChange={(e) => setInput(e.currentTarget.value.toLowerCase())}
+            type="text"
+            placeholder="Search products, brands and categories"
+            className="header_searchInput"
+          />
+        </div>
+
+        {!input ? (
+          ""
+        ) : (
+          <button
+            type="submit"
+            onClick={search}
+            className="search_button"
+            formnovalidate="formnovalidate"
+          >
+            SEARCH{" "}
+          </button>
+        )}
       </form>
 
       <div className="header_nav">
@@ -71,7 +80,7 @@ function search(e) {
         </Link>
         <Link to="/login" className="header_link">
           <div className="header_option">
-            <span className="header_optionLineOne gone" >
+            <span className="header_optionLineOne gone">
               <HelpOutlineOutlinedIcon />
             </span>
             <span className="header_optionLineTwo gone">Help</span>

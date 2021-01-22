@@ -1,5 +1,5 @@
-## Amazone clone features
-This is a Amazon clone in React hosted here: https://e-clone-b16ec.web.app/
+## Jumia clone features
+This is a Jumia clone in React hosted here:
 
 The App was created implementing:
 1. React

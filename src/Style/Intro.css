@@ -1,90 +1,155 @@
-.intro{
-    display: flex;
-    margin: 10px 15px;
-    height: 20rem;
+.intro {
+  display: flex;
+  margin: 10px 15px;
+  height: 20rem;
 }
- .showcase{
-    width: 40rem;
-    height: 100%;
+.showcase {
+  width: 40rem;
+  height: 100%;
 }
-.home_image{
-    object-fit: contain;
+.home_image {
+  object-fit: contain;
 }
-.categories{
-    margin: 0 10px 0 0px;
-    background-color: #FFFFFF;
-    height: 100%;
-    width: 14rem;
+.categories {
+  margin: 0 10px 0 0px;
+  background-color: #ffffff;
+  height: 100%;
+  width: 14rem;
 }
-.categories a{
-    text-decoration: none;
-    color: black;
-
+.categories a {
+  text-decoration: none;
+  color: black;
 }
-.category_icons{
-    height: 10px;
-    width: 1px;
+.category_icons {
+  height: 10px;
+  width: 1px;
 }
-.category_items{
-    display: flex;
-    align-items: center;
-    margin: 10px;
+.category_items {
+  display: flex;
+  align-items: center;
+  margin: 10px;
 }
-.categories a:hover{
-   color:#E4811C ;
+.categories a:hover {
+  color: #e4811c;
 }
-.category_items span{
-font-size: 10px;
-margin-left: 5px;
+.category_items span {
+  font-size: 10px;
+  margin-left: 5px;
 }
-.right_section{
-    margin-left: 10px;
-    height: 100%;
-    width: 17rem;
+.right_section {
+  margin-left: 10px;
+  height: 100%;
+  width: 17rem;
 }
-.right_section_content{
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    max-height: 9rem;
-    padding: 9px;
-    
+.right_section_content {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  max-height: 9rem;
+  padding: 9px;
 }
-.right_section_content_items{
-    display: flex;
-    align-items: center;
-    max-height: 3.4rem;
-    margin: 0px;
-    padding-left: 10px;
+.right_section_content_items {
+  display: flex;
+  align-items: center;
+  max-height: 3.4rem;
+  margin: 0px;
+  padding-left: 10px;
 }
-.right_section_content_items img{
-    max-height: 1.5rem;
-    width: 1.5rem;
-    padding-bottom: 17px;
+.right_section_content_items img {
+  max-height: 1.5rem;
+  width: 1.5rem;
+  padding-bottom: 17px;
 }
-.right_section_content_items .title{
-    margin-top: 5px;
-    font-size: 13px;
-    font-weight: 500;
-    margin-left: 5px;
-    padding:0px 0px 0px opx;
+.right_section_content_items .title {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 5px;
+  padding: 0px 0px 0px opx;
 }
-.right_section_content_items .desc{
-    font-weight: 400;
-    font-size: 12px;
+.right_section_content_items .desc {
+  font-weight: 400;
+  font-size: 12px;
 }
 
-.right_section_ads{
-    margin-top: 12px;
-    width: 16rem;
+.right_section_ads {
+  margin-top: 12px;
+  width: 16rem;
 }
-.right_section_ads video{
-   height: 100%;
-    width: 100%;
+.right_section_ads video {
+  height: 100%;
+  width: 100%;
 }
 
 /* TRANSITIONS */
 .showcase {
+  animation-name: and;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+@keyframes and {
+  0% {
+    background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg")
+      no-repeat center center / cover;
+  }
+  30% {
+    background: url("../images/jumia_images/Holiday-Savings-Slider-4.jpg")
+      no-repeat center center / cover;
+  }
+
+  65% {
+    background: url("../images/jumia_images/Jumia-Prime-3-Slider.jpg") no-repeat
+      center center / cover;
+  }
+
+  100% {
+    background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg")
+      no-repeat center center / cover;
+  }
+}
+
+@media (max-width: 378px) {
+  .off {
+    display: none;
+  }
+  .intro {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin-left: 2rem;
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 20rem;
+    margin: auto auto;
+    margin-bottom: 0px;
+    height: 100%;
+  }
+  .category_icons {
+    height: 10px;
+    width: 1px;
+  }
+  .category_items {
+    display: flex;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 999px) {
+  .off {
+    display: none;
+  }
+  .showcase {
+    width: 40rem;
+    height: 100%;
+  }
+  .home_image {
+    object-fit: contain;
+  }
+  .showcase {
     animation-name: and;
     animation-duration: 9s;
     animation-iteration-count: infinite;
@@ -92,123 +157,53 @@ margin-left: 5px;
   }
   @keyframes and {
     0% {
-        background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg") no-repeat center center / cover;
-
+      background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg")
+        no-repeat center center / contain;
     }
     30% {
-        background: url("../images/jumia_images/Holiday-Savings-Slider-4.jpg") no-repeat center center / cover;
+      background: url("../images/jumia_images/Holiday-Savings-Slider-4.jpg")
+        no-repeat center center / contain;
     }
-    
+
     65% {
-        background: url("../images/jumia_images/Jumia-Prime-3-Slider.jpg") no-repeat center center / cover;
+      background: url("../images/jumia_images/Jumia-Prime-3-Slider.jpg")
+        no-repeat center center / contain;
     }
 
     100% {
-        background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg") no-repeat center center / cover;
+      background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg")
+        no-repeat center center / contain;
     }
   }
-
-  @media (max-width: 378px) {
-      .off{
-          display: none;
-      }
-    .intro{
-        flex-direction: column; 
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;   
-        margin-left: 2rem; 
-    }
-    .categories{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 20rem;
-        margin: auto auto;
-        margin-bottom: 0px;
-        height: 100%;
-        /* margin-right:15px ; */
-    }
-    .category_icons{
-        height: 10px;
-        width: 1px;
-    }
-    .category_items{
-        display: flex;
-        margin: 5px;
-    }
-   
-  }
-
-  @media (max-width: 999px) {
-    .off{
-        display: none;
-    }
-    
-    /* .categories>*{
-        flex: 1;
-    } */
-    .showcase{
-        width: 40rem;
-        height: 100%;
-    }
-    .home_image{
-        object-fit: contain;
-    }
-    .showcase {
-        animation-name: and;
-        animation-duration: 9s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease;
-      }
-      @keyframes and {
-        0% {
-            background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg") no-repeat center center / contain;
-    
-        }
-        30% {
-            background: url("../images/jumia_images/Holiday-Savings-Slider-4.jpg") no-repeat center center / contain;
-        }
-        
-        65% {
-            background: url("../images/jumia_images/Jumia-Prime-3-Slider.jpg") no-repeat center center / contain;
-        }
-    
-        100% {
-            background: url("../images/jumia_images/Holiday-Savings-Slider-1.jpg") no-repeat center center / contain;
-        }
-      }
 }
 @media (max-width: 516px) {
-    .intro{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    .showcase{
-        max-width: 20rem;
-        height: 100%;
-        /* border: 3px solid red; */
-    }
-    .categories{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        max-height: 7.5rem;
-    }
-    .category_items{
-        /* border: 3px solid red; */
-        display: flex;
-        align-items: center;
-        margin: 5pxpx;
-        height: 2rem;
-    }
-
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .showcase {
+    max-width: 20rem;
+    height: 100%;
+  }
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 7.5rem;
+  }
+  .category_items {
+    display: flex;
+    align-items: center;
+    margin: 5pxpx;
+    height: 2rem;
+  }
 }
 @media (max-width: 318px) {
-    .categories{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
