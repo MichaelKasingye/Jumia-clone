@@ -4,8 +4,8 @@
 <a href="https://jumia-clone-4fdfe.web.app">Jumia clone Mini (React JS)</a>
 This is a Jumia clone Mini version in React hosted here: https://jumia-clone-4fdfe.web.app
 
-The App was created implementing:
-1. React
+The App was created in:
+1. React JS
 2. React context API
 3. React Hooks
 4. Firebase Hosting
