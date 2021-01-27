@@ -67,7 +67,7 @@ function Header() {
       </form>
 
       <div className="header_nav">
-        <Link to={!user && "/login"} className="header_link">
+        <Link to={!user && "/"} className="header_link">
           <div onClick={login} className="header_option">
             <span className="header_optionLineOne">
               <AccountCircleOutlinedIcon /> {user?.email}
@@ -77,7 +77,7 @@ function Header() {
             </span>
           </div>
         </Link>
-        <Link to="/login" className="header_link">
+        <Link to="/" className="header_link">
           <div className="header_option">
             <span className="header_optionLineOne gone">
               <HelpOutlineOutlinedIcon />
